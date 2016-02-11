@@ -4,7 +4,7 @@ import subprocess
 import glob
 
 directory = raw_input("Path containing FASTA assemblies: ")
-outputraw = raw_input("Path to output annotation directoies: ")
+outputraw = raw_input("Path to output annotation directories: ")
 if not os.path.exists(outputraw):
     os.makedirs(outputraw)
 fasta = list(glob.glob(os.path.join(directory,'*.fasta')))

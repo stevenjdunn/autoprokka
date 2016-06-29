@@ -2,6 +2,7 @@
 import os
 import subprocess
 import glob
+import shutil
 
 directory = raw_input("Path containing FASTA assemblies: ")
 outputraw = raw_input("Path to output annotation directories: ")
@@ -33,7 +34,12 @@ if choice in positive:
     gfflocations = [''.join(x) for x in zip(output, gffnames)]
     gffoutput = [outputgff + x for x in gffnames]
     for gffin, gffout in zip(gfflocations, gffoutput):
-        subprocess.call(['cp', gffin, gffout])
+        try:
+            shutil.copyfile(gffin, gffout)
+        except IOError as e:
+            print 'The following files were not found, indicating that prokka did not finish correctly.'
+            print e
+            print 'Please check FASTA input.'
 
 
 print ''

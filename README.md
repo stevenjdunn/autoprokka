@@ -4,7 +4,7 @@ A script that automatically invokes prokka on a directory of FASTA genomes and n
 Simply place genome assemblies in the .fasta file format into a single directory, and invoke the autoprokka.py script.
 
 # Usage
-autoprokka.py -i <path to directory containing assemblies> -o <path to output annotations and renamed .gff's>
+autoprokka.py -i < path to directory containing assemblies > -o < path to output annotations and renamed .gff's >
 
 # Adding flags to prokka
 Edit line 82: 

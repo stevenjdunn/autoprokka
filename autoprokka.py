@@ -36,7 +36,7 @@ sys.stdout = Logger()
 print ''
 print ''
 print  colours.bold + '######################'
-print 'Welcome to AutoSPAdes'
+print 'Welcome to AutoPROKKA'
 print '######################' + colours.term
 print ''
 
@@ -56,7 +56,7 @@ if not os.path.exists(args.output):
         print 'Script Failed'
         print '#############' + colours.term
         print ''
-        print 'Errors written to:' + os.getcwd() + '/' + 'autospades.log'
+        print 'Errors written to:' + os.getcwd() + '/' + 'autoprokka.log'
         print ''
         sys.exit(1)
 

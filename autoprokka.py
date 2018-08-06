@@ -8,7 +8,7 @@ import sys
 import re
 
 # Version
-_version_="1.0"
+_version_="1.0.1"
 
 # Argparse argument setup
 parser = argparse.ArgumentParser()
@@ -114,7 +114,7 @@ if args.genbank:
 
 # End
 print('')
-print('Output files renamed and stored in:', outputraw)
+print('Output files renamed and stored in: ' + outputraw)
 print('')
 print('Author: www.github.com/stevenjdunn')
 print('')
